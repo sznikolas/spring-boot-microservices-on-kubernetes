@@ -42,10 +42,10 @@ spec:
             value: "true"
         readinessProbe:
           httpGet:
-            port: 8082
+            port: 8080
             path: /actuator/health/readiness
         livenessProbe:
           httpGet:
-            port: 8082
+            port: 8080
             path: /actuator/health/liveness
 status: {}
